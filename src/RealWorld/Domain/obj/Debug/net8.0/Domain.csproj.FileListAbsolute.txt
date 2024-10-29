@@ -1,0 +1,11 @@
+C:\Users\marci\Projects\nobleprog-merrid-blazor\src\RealWorld\Domain\bin\Debug\net8.0\Domain.deps.json
+C:\Users\marci\Projects\nobleprog-merrid-blazor\src\RealWorld\Domain\bin\Debug\net8.0\Domain.dll
+C:\Users\marci\Projects\nobleprog-merrid-blazor\src\RealWorld\Domain\bin\Debug\net8.0\Domain.pdb
+C:\Users\marci\Projects\nobleprog-merrid-blazor\src\RealWorld\Domain\obj\Debug\net8.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\marci\Projects\nobleprog-merrid-blazor\src\RealWorld\Domain\obj\Debug\net8.0\Domain.AssemblyInfoInputs.cache
+C:\Users\marci\Projects\nobleprog-merrid-blazor\src\RealWorld\Domain\obj\Debug\net8.0\Domain.AssemblyInfo.cs
+C:\Users\marci\Projects\nobleprog-merrid-blazor\src\RealWorld\Domain\obj\Debug\net8.0\Domain.csproj.CoreCompileInputs.cache
+C:\Users\marci\Projects\nobleprog-merrid-blazor\src\RealWorld\Domain\obj\Debug\net8.0\Domain.dll
+C:\Users\marci\Projects\nobleprog-merrid-blazor\src\RealWorld\Domain\obj\Debug\net8.0\refint\Domain.dll
+C:\Users\marci\Projects\nobleprog-merrid-blazor\src\RealWorld\Domain\obj\Debug\net8.0\Domain.pdb
+C:\Users\marci\Projects\nobleprog-merrid-blazor\src\RealWorld\Domain\obj\Debug\net8.0\ref\Domain.dll

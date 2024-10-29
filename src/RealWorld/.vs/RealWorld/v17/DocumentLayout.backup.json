@@ -1,0 +1,190 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\marci\\Projects\\nobleprog-merrid-blazor\\src\\RealWorld\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{862F9100-DC78-414D-8525-AA9BE955E697}|BlazorServerApp\\BlazorServerApp.csproj|c:\\users\\marci\\projects\\nobleprog-merrid-blazor\\src\\realworld\\blazorserverapp\\components\\pages\\customers\\list.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{862F9100-DC78-414D-8525-AA9BE955E697}|BlazorServerApp\\BlazorServerApp.csproj|solutionrelative:blazorserverapp\\components\\pages\\customers\\list.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{928EB038-D325-40F9-8B64-5B69CF91B62C}|Infrastructure\\Infrastructure.csproj|c:\\users\\marci\\projects\\nobleprog-merrid-blazor\\src\\realworld\\infrastructure\\fakecustomerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{928EB038-D325-40F9-8B64-5B69CF91B62C}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\fakecustomerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{862F9100-DC78-414D-8525-AA9BE955E697}|BlazorServerApp\\BlazorServerApp.csproj|c:\\users\\marci\\projects\\nobleprog-merrid-blazor\\src\\realworld\\blazorserverapp\\components\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{862F9100-DC78-414D-8525-AA9BE955E697}|BlazorServerApp\\BlazorServerApp.csproj|solutionrelative:blazorserverapp\\components\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{862F9100-DC78-414D-8525-AA9BE955E697}|BlazorServerApp\\BlazorServerApp.csproj|c:\\users\\marci\\projects\\nobleprog-merrid-blazor\\src\\realworld\\blazorserverapp\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{862F9100-DC78-414D-8525-AA9BE955E697}|BlazorServerApp\\BlazorServerApp.csproj|solutionrelative:blazorserverapp\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{862F9100-DC78-414D-8525-AA9BE955E697}|BlazorServerApp\\BlazorServerApp.csproj|c:\\users\\marci\\projects\\nobleprog-merrid-blazor\\src\\realworld\\blazorserverapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{862F9100-DC78-414D-8525-AA9BE955E697}|BlazorServerApp\\BlazorServerApp.csproj|solutionrelative:blazorserverapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{928EB038-D325-40F9-8B64-5B69CF91B62C}|Infrastructure\\Infrastructure.csproj|c:\\users\\marci\\projects\\nobleprog-merrid-blazor\\src\\realworld\\infrastructure\\dbcustomerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{928EB038-D325-40F9-8B64-5B69CF91B62C}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\dbcustomerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC8BE071-D357-44C8-8409-353DFDDB90B8}|Domain\\Domain.csproj|c:\\users\\marci\\projects\\nobleprog-merrid-blazor\\src\\realworld\\domain\\abstractions\\customerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC8BE071-D357-44C8-8409-353DFDDB90B8}|Domain\\Domain.csproj|solutionrelative:domain\\abstractions\\customerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC8BE071-D357-44C8-8409-353DFDDB90B8}|Domain\\Domain.csproj|c:\\users\\marci\\projects\\nobleprog-merrid-blazor\\src\\realworld\\domain\\abstractions\\icustomerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC8BE071-D357-44C8-8409-353DFDDB90B8}|Domain\\Domain.csproj|solutionrelative:domain\\abstractions\\icustomerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC8BE071-D357-44C8-8409-353DFDDB90B8}|Domain\\Domain.csproj|c:\\users\\marci\\projects\\nobleprog-merrid-blazor\\src\\realworld\\domain\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC8BE071-D357-44C8-8409-353DFDDB90B8}|Domain\\Domain.csproj|solutionrelative:domain\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC8BE071-D357-44C8-8409-353DFDDB90B8}|Domain\\Domain.csproj|c:\\users\\marci\\projects\\nobleprog-merrid-blazor\\src\\realworld\\domain\\models\\base.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC8BE071-D357-44C8-8409-353DFDDB90B8}|Domain\\Domain.csproj|solutionrelative:domain\\models\\base.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "_Imports.razor",
+              "DocumentMoniker": "C:\\Users\\marci\\Projects\\nobleprog-merrid-blazor\\src\\RealWorld\\BlazorServerApp\\Components\\_Imports.razor",
+              "RelativeDocumentMoniker": "BlazorServerApp\\Components\\_Imports.razor",
+              "ToolTip": "C:\\Users\\marci\\Projects\\nobleprog-merrid-blazor\\src\\RealWorld\\BlazorServerApp\\Components\\_Imports.razor",
+              "RelativeToolTip": "BlazorServerApp\\Components\\_Imports.razor",
+              "ViewState": "AgIAAAUAAAAAAAAAAADwvwgAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-29T14:54:59.114Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "NavMenu.razor",
+              "DocumentMoniker": "C:\\Users\\marci\\Projects\\nobleprog-merrid-blazor\\src\\RealWorld\\BlazorServerApp\\Components\\Layout\\NavMenu.razor",
+              "RelativeDocumentMoniker": "BlazorServerApp\\Components\\Layout\\NavMenu.razor",
+              "ToolTip": "C:\\Users\\marci\\Projects\\nobleprog-merrid-blazor\\src\\RealWorld\\BlazorServerApp\\Components\\Layout\\NavMenu.razor",
+              "RelativeToolTip": "BlazorServerApp\\Components\\Layout\\NavMenu.razor",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAUwB4AAABdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-29T14:53:13.565Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DbCustomerRepository.cs",
+              "DocumentMoniker": "C:\\Users\\marci\\Projects\\nobleprog-merrid-blazor\\src\\RealWorld\\Infrastructure\\DbCustomerRepository.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\DbCustomerRepository.cs",
+              "ToolTip": "C:\\Users\\marci\\Projects\\nobleprog-merrid-blazor\\src\\RealWorld\\Infrastructure\\DbCustomerRepository.cs",
+              "RelativeToolTip": "Infrastructure\\DbCustomerRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T14:37:25.937Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "List.razor",
+              "DocumentMoniker": "C:\\Users\\marci\\Projects\\nobleprog-merrid-blazor\\src\\RealWorld\\BlazorServerApp\\Components\\Pages\\Customers\\List.razor",
+              "RelativeDocumentMoniker": "BlazorServerApp\\Components\\Pages\\Customers\\List.razor",
+              "ToolTip": "C:\\Users\\marci\\Projects\\nobleprog-merrid-blazor\\src\\RealWorld\\BlazorServerApp\\Components\\Pages\\Customers\\List.razor",
+              "RelativeToolTip": "BlazorServerApp\\Components\\Pages\\Customers\\List.razor",
+              "ViewState": "AgIAABIAAAAAAAAAAAAcwB8AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-29T13:57:58.812Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CustomerService.cs",
+              "DocumentMoniker": "C:\\Users\\marci\\Projects\\nobleprog-merrid-blazor\\src\\RealWorld\\Domain\\Abstractions\\CustomerService.cs",
+              "RelativeDocumentMoniker": "Domain\\Abstractions\\CustomerService.cs",
+              "ToolTip": "C:\\Users\\marci\\Projects\\nobleprog-merrid-blazor\\src\\RealWorld\\Domain\\Abstractions\\CustomerService.cs",
+              "RelativeToolTip": "Domain\\Abstractions\\CustomerService.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAA7wBQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T13:40:44.663Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FakeCustomerRepository.cs",
+              "DocumentMoniker": "C:\\Users\\marci\\Projects\\nobleprog-merrid-blazor\\src\\RealWorld\\Infrastructure\\FakeCustomerRepository.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\FakeCustomerRepository.cs",
+              "ToolTip": "C:\\Users\\marci\\Projects\\nobleprog-merrid-blazor\\src\\RealWorld\\Infrastructure\\FakeCustomerRepository.cs",
+              "RelativeToolTip": "Infrastructure\\FakeCustomerRepository.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAiwB8AAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T13:39:16.009Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ICustomerRepository.cs",
+              "DocumentMoniker": "C:\\Users\\marci\\Projects\\nobleprog-merrid-blazor\\src\\RealWorld\\Domain\\Abstractions\\ICustomerRepository.cs",
+              "RelativeDocumentMoniker": "Domain\\Abstractions\\ICustomerRepository.cs",
+              "ToolTip": "C:\\Users\\marci\\Projects\\nobleprog-merrid-blazor\\src\\RealWorld\\Domain\\Abstractions\\ICustomerRepository.cs",
+              "RelativeToolTip": "Domain\\Abstractions\\ICustomerRepository.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAQAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T13:30:42.916Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Base.cs",
+              "DocumentMoniker": "C:\\Users\\marci\\Projects\\nobleprog-merrid-blazor\\src\\RealWorld\\Domain\\Models\\Base.cs",
+              "RelativeDocumentMoniker": "Domain\\Models\\Base.cs",
+              "ToolTip": "C:\\Users\\marci\\Projects\\nobleprog-merrid-blazor\\src\\RealWorld\\Domain\\Models\\Base.cs",
+              "RelativeToolTip": "Domain\\Models\\Base.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T13:28:09.332Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Customer.cs",
+              "DocumentMoniker": "C:\\Users\\marci\\Projects\\nobleprog-merrid-blazor\\src\\RealWorld\\Domain\\Models\\Customer.cs",
+              "RelativeDocumentMoniker": "Domain\\Models\\Customer.cs",
+              "ToolTip": "C:\\Users\\marci\\Projects\\nobleprog-merrid-blazor\\src\\RealWorld\\Domain\\Models\\Customer.cs",
+              "RelativeToolTip": "Domain\\Models\\Customer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T13:23:41.028Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\marci\\Projects\\nobleprog-merrid-blazor\\src\\RealWorld\\BlazorServerApp\\Program.cs",
+              "RelativeDocumentMoniker": "BlazorServerApp\\Program.cs",
+              "ToolTip": "C:\\Users\\marci\\Projects\\nobleprog-merrid-blazor\\src\\RealWorld\\BlazorServerApp\\Program.cs",
+              "RelativeToolTip": "BlazorServerApp\\Program.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAA1wBAAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T13:22:01.899Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

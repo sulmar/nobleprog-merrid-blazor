@@ -1,0 +1,38 @@
+﻿@page "/customers"
+@inject ICustomerRepository Repository
+@rendermode InteractiveServer
+
+<h3>List</h3>
+
+@if (isLoading)
+{
+    <p>Loading customers...</p>
+}
+else
+{
+    <ul>
+        @foreach (var customer in customers)
+        {
+            <li>@customer.Name @customer.Id</li>
+        }
+    </ul>
+}
+
+@code {
+    private bool isLoading;
+
+    private IEnumerable<Customer> customers;
+
+    protected override async Task OnInitializedAsync()
+    {
+        isLoading = true;
+
+        await Task.Delay(10_000);
+
+        customers = await Repository.GetAllAsync();
+
+        isLoading = false;
+    }
+
+
+}
