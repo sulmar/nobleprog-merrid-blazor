@@ -1,0 +1,34 @@
+﻿
+<table class="table table-striped">
+
+    @if (HeaderTemplate is not null)
+    {
+        <thead>
+            <tr>
+                @HeaderTemplate
+            </tr>
+        </thead>
+
+    }
+    <tbody>
+        @foreach (var customer in Customers)
+        {
+            <tr>
+                @RowTemplate(customer)
+            </tr>
+        }
+    </tbody>
+</table>
+
+@code {
+
+    [Parameter]
+    public IEnumerable<Customer> Customers { get; set; }
+
+    [Parameter]
+    public RenderFragment? HeaderTemplate { get; set; }
+
+    [Parameter]
+    public RenderFragment<Customer> RowTemplate { get; set; }
+
+}

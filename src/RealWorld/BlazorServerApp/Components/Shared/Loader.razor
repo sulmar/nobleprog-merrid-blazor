@@ -1,0 +1,27 @@
+﻿@if (IsLoading)
+{
+    <div class="loader">
+        <p>@Message</p>
+        <div class="spinner"></div>
+    </div>
+}
+else
+{
+    @ChildContent
+}
+
+
+@code {
+    [Parameter, EditorRequired]
+    public required string Message { get; set; }
+
+    [Parameter]
+    public bool IsLoading { get; set; }
+
+    [Parameter, EditorRequired]
+    public required RenderFragment ChildContent { get; set; }
+
+
+
+
+}

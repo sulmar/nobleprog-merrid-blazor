@@ -1,0 +1,14 @@
+﻿<ul>
+    @foreach (var customer in Customers)
+    {
+        <li class="customer-item">@customer.Name @customer.Id</li>
+    }
+</ul>
+
+
+@code {
+
+    [Parameter]
+    public IEnumerable<Customer> Customers { get; set; }
+
+}
