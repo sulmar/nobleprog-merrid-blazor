@@ -1,0 +1,28 @@
+﻿@using BlazorServerApp.Models
+<h3>ChildComponent</h3>
+
+<p>@Info.Message</p>
+
+<p>@Info.Description</p>
+
+<p>@Year</p>
+
+@code {
+
+    // [CascadingParameter(Name = "a")]
+    // public string Message { get; set; }
+
+    // [CascadingParameter(Name = "b")]
+    // public string Description { get; set; }
+
+    [CascadingParameter]
+    public CustomerInfo Info { get; set; }
+
+    [CascadingParameter]
+    public int Year { get; set; }
+
+    [CascadingParameter]
+    public EventCallback<string> OnSearch { get; set; } 
+
+}
+

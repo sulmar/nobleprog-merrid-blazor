@@ -1,35 +1,54 @@
 ﻿@page "/customers"
 @inject ICustomerRepository Repository
 @rendermode InteractiveServer
+@using BlazorServerApp.Components.Shared
+@using Microsoft.AspNetCore.Authorization
+@using Microsoft.AspNetCore.Components.Authorization
+@attribute [Authorize]
 
 <h3>List</h3>
 
-@if (isLoading)
-{
-    <p>Loading customers...</p>
-}
-else
-{
-    <ul>
-        @foreach (var customer in customers)
-        {
-            <li>@customer.Name @customer.Id</li>
-        }
-    </ul>
-}
+<AuthorizeView Roles="admin">
+
+    <SearchPanel OnSearch=@Search />
+
+</AuthorizeView>
+
+<Loader Message="Loading customers..." IsLoading=@isLoading>
+    <TableTemplate Items="@Customers">
+       @*  <HeaderTemplate>
+            <th>Id</th>
+            <th>Name</th>
+        </HeaderTemplate> *@
+
+      @*   <RowTemplate Context="customer">
+            <td>@customer.Id</td>
+            <td>@customer.Name</td>
+        </RowTemplate> *@
+    </TableTemplate>
+</Loader>
 
 @code {
+    private void Search(string searchText)
+    {
+        Console.WriteLine($"Search customers {searchText}");
+    }
+
     private bool isLoading;
 
-    private IEnumerable<Customer> customers;
+    public IEnumerable<Customer>? Customers { get; set; }
 
     protected override async Task OnInitializedAsync()
     {
         isLoading = true;
 
-        await Task.Delay(10_000);
+        await Task.Delay(1_000);
 
-        customers = await Repository.GetAllAsync();
+        var customerTask1 = Repository.GetAllAsync();
+        var customerTask2 = Repository.GetAllAsync();
+
+        await Task.WhenAll(customerTask1, customerTask2);
+        Customers = await customerTask1;
 
         isLoading = false;
     }

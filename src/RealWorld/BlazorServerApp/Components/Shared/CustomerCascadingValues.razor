@@ -1,0 +1,30 @@
+﻿@using BlazorServerApp.Models
+@inject ICustomerRepository Repository
+
+<CascadingValue Value=@Search>
+
+<CascadingValue Value="@Customers">
+        @if (ChildContent is not null)
+            @ChildContent
+
+</CascadingValue>
+
+</CascadingValue>
+
+@code {
+
+    private async Task Search(string searchText)
+    {
+
+    }
+
+    [Parameter]
+    public RenderFragment ChildContent { get; set; }
+
+    public IEnumerable<Customer> Customers { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        Customers = await Repository.GetAllAsync();
+    }
+}

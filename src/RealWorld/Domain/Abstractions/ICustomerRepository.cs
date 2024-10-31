@@ -2,12 +2,9 @@
 
 namespace Domain.Abstractions;
 
-public interface ICustomerRepository
+public interface ICustomerRepository : IEntityRepository<Customer>
 {
-    Task<IEnumerable<Customer>> GetAllAsync();
-    Task<Customer> GetAsync(int id);
-    Task AddAsync(Customer customer);
-    Task UpdateAsync(Customer customer);
-    Task RemoveAsync(int id);    
+    
 }
+
 

@@ -1,0 +1,57 @@
+﻿@typeparam TItem
+
+
+<table class="table table-striped">
+
+    <thead>
+        <tr>
+            @if (HeaderTemplate is not null)
+            {
+                @HeaderTemplate
+            }
+            else
+            {
+                @foreach (var column in Columns)
+                {
+                    <th>@column</th>
+                }
+            }
+
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach (var item in Items)
+        {
+            <tr>
+                @if (RowTemplate is not null)
+                    @RowTemplate(item)
+                else
+                {
+                    @foreach(var column in Columns)
+                    {
+                        <td>@GetValue(item, column)</td>
+                    }
+                }
+            </tr>
+        }
+    </tbody>
+</table>
+
+@code {
+
+    [Parameter]
+    public IEnumerable<TItem> Items { get; set; }
+
+    [Parameter]
+    public RenderFragment? HeaderTemplate { get; set; }
+
+    [Parameter]
+    public RenderFragment<TItem>? RowTemplate { get; set; }
+
+
+    private string[] Columns => typeof(TItem).GetProperties().Select(p => p.Name).ToArray();
+
+    private object? GetValue(TItem item, string propertyName) => typeof(TItem).GetProperty(propertyName)?.GetValue(item);
+
+}

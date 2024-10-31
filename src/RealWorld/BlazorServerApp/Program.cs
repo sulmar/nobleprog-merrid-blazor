@@ -12,9 +12,9 @@ builder.Services.AddRazorComponents()
 builder.Services.AddScoped<ICustomerRepository, FakeCustomerRepository>();
 builder.Services.AddScoped<IEnumerable<Customer>>(sp =>
 [
-    new Customer { Id = 1, Name = "a" },
-    new Customer { Id = 2, Name = "b" },
-    new Customer { Id = 3, Name = "c" },
+    new Customer { Id = 1, Name = "a", Description = "aa" },
+    new Customer { Id = 2, Name = "b", Description = "bb" },
+    new Customer { Id = 3, Name = "c", Description = "cc" },
 ]);
 
 var app = builder.Build();
