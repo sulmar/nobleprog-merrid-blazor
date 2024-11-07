@@ -6,12 +6,13 @@ namespace Auth.Api.Infrastructure;
 
 public class AuthService : IAuthService
 {
-    private readonly IPasswordHasher<UserIdentity> passwordHasher;
     private readonly IUserIdentityRepository repository;
+    private readonly IPasswordHasher<UserIdentity> passwordHasher;
 
-    public AuthService(IUserIdentityRepository repository)
+    public AuthService(IUserIdentityRepository repository, IPasswordHasher<UserIdentity> passwordHasher)
     {
         this.repository = repository;
+        this.passwordHasher = passwordHasher;
     }
 
     public async Task<AuthorizeResult> TryAuthorizeAsync(string username, string password)
