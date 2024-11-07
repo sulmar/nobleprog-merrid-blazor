@@ -43,6 +43,7 @@ public class JwtTokenAuthenticationStateProvider : AuthenticationStateProvider
                     ValidAudience = "Xyz",
                     ValidateAudience = true,
                     ValidateLifetime = true,
+                    
                     IssuerSigningKey = new SymmetricSecurityKey(key)
                 };
 

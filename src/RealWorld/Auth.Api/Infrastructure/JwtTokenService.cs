@@ -13,12 +13,13 @@ public class JwtTokenService : ITokenService
 {
     public string CreateAccessToken(UserIdentity userIdentity)
     {
-        var tokenHandler = new JwtSecurityTokenHandler();
-
         Claim[] claims = [
-                //new Claim(ClaimTypes.Name, userIdentity.Username),
+                new Claim(ClaimTypes.Name, userIdentity.Username),
                 //new Claim(ClaimTypes.Email, userIdentity.Email),
-                //new Claim(ClaimTypes.NameIdentifier, userIdentity.Username),
+                new Claim(ClaimTypes.NameIdentifier, userIdentity.Username),
+
+                new Claim(ClaimTypes.Role, "admin"),
+                new Claim(ClaimTypes.Role, "developer"),
 
                 new Claim(JwtRegisteredClaimNames.Sub, userIdentity.Username),
                 new Claim(JwtRegisteredClaimNames.Name, userIdentity.Username),
@@ -33,18 +34,14 @@ public class JwtTokenService : ITokenService
 
         var signingCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature);
 
-        var tokenDescriptor = new SecurityTokenDescriptor
-        {
-            Subject = claimsIdentity,
-            Issuer = "Abc",
-            Audience = "Xyz",
-            Expires = DateTime.UtcNow.AddMinutes(5),
-            SigningCredentials = signingCredentials,            
-        };
+        JwtSecurityToken securityToken = new JwtSecurityToken(
+            issuer: "Abc",
+            audience: "Xyz",
+            expires: DateTime.UtcNow.AddMinutes(5),
+            claims: claims,
+            signingCredentials: signingCredentials);
 
-        var securityToken = tokenHandler.CreateToken(tokenDescriptor);
-
-        var token = tokenHandler.WriteToken(securityToken);
+        var token = new JwtSecurityTokenHandler().WriteToken(securityToken);
 
 
         return token;

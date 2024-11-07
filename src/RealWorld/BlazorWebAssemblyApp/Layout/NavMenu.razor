@@ -48,6 +48,11 @@
 
             <Authorized>
                 <div class="nav-item px-3">
+                    <p>Hello, @context.User.Identity?.Name</p>
+                </div>
+
+
+                <div class="nav-item px-3">
                     <button type="button" class="nav-link" @onclick=@Logout >
                         <span class="bi bi-list-nested-nav-menu" aria-hidden="true"></span> Logout
                     </button>
