@@ -36,8 +36,10 @@ public class JwtTokenService : ITokenService
         var tokenDescriptor = new SecurityTokenDescriptor
         {
             Subject = claimsIdentity,
+            Issuer = "Abc",
+            Audience = "Xyz",
             Expires = DateTime.UtcNow.AddMinutes(5),
-            SigningCredentials = signingCredentials
+            SigningCredentials = signingCredentials,            
         };
 
         var securityToken = tokenHandler.CreateToken(tokenDescriptor);

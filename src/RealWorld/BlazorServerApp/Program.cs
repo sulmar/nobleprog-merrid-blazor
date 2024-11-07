@@ -2,6 +2,7 @@ using BlazorServerApp.Components;
 using Domain.Abstractions;
 using Domain.Models;
 using Infrastructure;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -16,6 +17,13 @@ builder.Services.AddScoped<IEnumerable<Customer>>(sp =>
     new Customer { Id = 2, Name = "b", Description = "bb" },
     new Customer { Id = 3, Name = "c", Description = "cc" },
 ]);
+
+builder.Services.AddAuthentication(options =>
+{
+    options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+    options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+})
+    .AddJwtBearer();
 
 var app = builder.Build();
 

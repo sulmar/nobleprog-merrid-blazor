@@ -8,11 +8,11 @@
 
 <h3>List</h3>
 
-<AuthorizeView Roles="admin">
+
 
     <SearchPanel OnSearch=@Search />
 
-</AuthorizeView>
+
 
 <Loader Message="Loading customers..." IsLoading=@isLoading>
     <TableTemplate Items="@Customers">

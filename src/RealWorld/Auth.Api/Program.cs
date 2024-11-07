@@ -28,13 +28,27 @@ builder.Services.AddScoped<IPasswordHasher<UserIdentity>, BCryptPasswordHasher<U
 
 builder.Services.AddScoped<ITokenService, JwtTokenService>();
 
+
+builder.Services.AddCors(options =>
+{
+    options.AddDefaultPolicy(policy =>
+    {
+        policy.WithOrigins("https://localhost:7030");
+        policy.WithMethods("POST");
+        policy.AllowAnyHeader();
+
+    });
+});
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
 
 app.UseHttpsRedirection();
 
-app.MapPost("/api/token/create", async ([FromForm] LoginRequest request, IAuthService authService, ITokenService tokenService) =>
+app.UseCors();
+
+app.MapPost("/api/token/create", async (LoginRequest request, IAuthService authService, ITokenService tokenService) =>
 {
     var authResult = await authService.TryAuthorizeAsync(request.Username, request.Password);
 
