@@ -21,6 +21,10 @@ public class JwtTokenService : ITokenService
                 new Claim(ClaimTypes.Role, "admin"),
                 new Claim(ClaimTypes.Role, "developer"),
 
+                new Claim(ClaimTypes.DateOfBirth, DateTime.Parse("2000-01-01").ToString()),
+
+                new Claim("LicenseDriver", "B"),
+
                 new Claim(JwtRegisteredClaimNames.Sub, userIdentity.Username),
                 new Claim(JwtRegisteredClaimNames.Name, userIdentity.Username),
                 new Claim(JwtRegisteredClaimNames.Email, userIdentity.Email),
