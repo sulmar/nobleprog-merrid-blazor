@@ -17,9 +17,9 @@ builder.Services.AddScoped<IEnumerable<UserIdentity>>(sp =>
 
     return new List<UserIdentity>
     {
-        new UserIdentity { Username = "john", FirstName = "John", LastName = "Smith", HashedPassword = passwordHasher.HashPassword(null, "123") },
-        new UserIdentity { Username = "kate", FirstName = "Kate", LastName = "Smith", HashedPassword = passwordHasher.HashPassword(null, "123")  },
-        new UserIdentity { Username = "bob", FirstName = "Bob", LastName = "Smith" , HashedPassword = passwordHasher.HashPassword(null, "123") },
+        new UserIdentity { Username = "john", FirstName = "John", LastName = "Smith", Email = "john@domain.com", HashedPassword = passwordHasher.HashPassword(null, "123") },
+        new UserIdentity { Username = "kate", FirstName = "Kate", LastName = "Smith", Email = "kate@domain.com", HashedPassword = passwordHasher.HashPassword(null, "123")  },
+        new UserIdentity { Username = "bob", FirstName = "Bob", LastName = "Smith" , Email = "bob@domain.com", HashedPassword = passwordHasher.HashPassword(null, "123") },
     };
 });
 
